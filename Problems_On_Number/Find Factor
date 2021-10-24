@@ -1,0 +1,40 @@
+Write a program to display all factor of a number on screen.
+Input- 10
+Output- 1,2,5,10
+
+import java.lang.*;
+import java.util.*;
+
+class Hello
+{
+	void PrintEvn(int iNo)
+	{
+		for(int i=1;i<=iNo;i++)
+		{
+		   if(iNo%i==0)
+		   {
+         //Display all factor of number on screen
+			   System.out.println(i+"\t");
+		   }			   
+		}
+	}
+}
+class Demo
+{
+public static void main(String args[])
+{
+	Scanner sobj=new Scanner(System.in);
+	
+  //Accept input from user
+	System.out.println("Enter Number:");
+	int iNo=sobj.nextInt();
+	
+  //Creating object
+	Hello hobj=new Hello();
+	
+  //Calling function
+	hobj.PrintEvn(iNo);
+}
+	
+}
+
